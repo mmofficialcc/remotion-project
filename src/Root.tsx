@@ -6,6 +6,7 @@ import { MiracleLeashGuide, GUIDE_DURATION } from "./MiracleLeashGuide";
 import { MiracleLeashGuide2, GUIDE2_DURATION } from "./MiracleLeashGuide2";
 import { MiracleLeashFinal, FINAL_DURATION } from "./MiracleLeashFinal";
 import { MiracleLeashV2, V2_DURATION } from "./MiracleLeashV2";
+import { MiracleLeashV3, V3_DURATION } from "./MiracleLeashV3";
 
 const FPS = 30;
 
@@ -66,6 +67,16 @@ export const RemotionRoot: React.FC = () => {
         id="MiracleLeashV2"
         component={MiracleLeashV2}
         durationInFrames={V2_DURATION}
+        fps={FPS}
+        width={1080}
+        height={1920}
+      />
+
+      {/* V3 – professional 3D character animation explainer */}
+      <Composition
+        id="MiracleLeashV3"
+        component={MiracleLeashV3}
+        durationInFrames={V3_DURATION}
         fps={FPS}
         width={1080}
         height={1920}
